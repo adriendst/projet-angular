@@ -1,0 +1,8 @@
+<ul class="list-group" *ngIf="mangas">
+  <app-manga *ngFor="let manga of mangas; let i = index"
+            [mangaName]="manga.nom"
+            [mangaVF]="manga.vf"
+            [id]="manga.id"></app-manga>
+</ul>
+
+
